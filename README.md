@@ -1,9 +1,13 @@
-# go-colors
+# colors
+
+```shell
+go get gio.tools/colors
+```
 
 A collection of established color values using `color.NRGBA` (non-alpha-premultiplied).
 
 ```go
-import "github.com/steverusso/go-colors"
+import "gio.tools/colors"
 
 // Material colors such as...
 colors.Pink200
@@ -24,10 +28,8 @@ colors.Red
 
 ## Why not alpha-premultiplied (`color.RGBA`)?
 
-1. [Gio](https://gioui.org/) APIs use `color.NRGBA`, and the primary intent of this package is for developing with Gio.
-2. As mentioned in [the commit description](https://github.com/gioui/gio/commit/21ef492cc9dfd9161e9fc57df25684865cd1c847) when Gio switched, most APIs use non-premultiplied for the sake of clarity.
-
-## License
-
-This is just a bunch of color values in Go. If a license needs to be mentioned
-at all, it's unlicensed and in the public domain.
+1. [Gio](https://gioui.org/) APIs use `color.NRGBA`, and the primary intent of this
+   package is for use with Gio.
+2. As mentioned in [the commit
+   description](https://github.com/gioui/gio/commit/21ef492cc9dfd9161e9fc57df25684865cd1c847)
+   when Gio switched, most APIs use non-premultiplied for the sake of clarity.
